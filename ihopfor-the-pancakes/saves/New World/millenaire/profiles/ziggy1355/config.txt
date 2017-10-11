@@ -1,0 +1,2 @@
+culture_reputation=japanese,-20
+village_reputations=-102/68/-24,-200

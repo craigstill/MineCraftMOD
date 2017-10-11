@@ -1,0 +1,119 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 10737418240 bytes for Failed to commit area from 0x0000000540000000 to 0x00000007c0000000 of length 10737418240.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3331), pid=18780, tid=0x0000000000002580
+#
+# JRE version:  (8.0_144-b01) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.144-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002863800):  JavaThread "Unknown thread" [_thread_in_vm, id=9600, stack(0x0000000000fb0000,0x00000000010b0000)]
+
+Stack: [0x0000000000fb0000,0x00000000010b0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002863800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=9600, stack(0x0000000000fb0000,0x00000000010b0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000000002862ae0] Heap_lock - owner thread: 0x0000000002863800
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff64aa50000 - 0x00007ff64aa87000 	C:\Program Files\Java\jre1.8.0_144\bin\javaw.exe
+0x00007ffc2e8f0000 - 0x00007ffc2eacb000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc2c890000 - 0x00007ffc2c93e000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc2b660000 - 0x00007ffc2b8a9000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc2cbd0000 - 0x00007ffc2cc71000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc2be50000 - 0x00007ffc2beed000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc2e890000 - 0x00007ffc2e8e9000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc2c440000 - 0x00007ffc2c565000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffc2cd40000 - 0x00007ffc2ce8a000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc2bc60000 - 0x00007ffc2bc7e000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc2c860000 - 0x00007ffc2c887000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc2ba70000 - 0x00007ffc2bbf8000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc2b5c0000 - 0x00007ffc2b65a000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc2b970000 - 0x00007ffc2ba66000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffc24b40000 - 0x00007ffc24da7000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.15063.483_none_26002d27e7c744a2\COMCTL32.dll
+0x00007ffc2bfa0000 - 0x00007ffc2c299000 	C:\WINDOWS\System32\combase.dll
+0x00007ffc2b900000 - 0x00007ffc2b96a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffc2c970000 - 0x00007ffc2c99d000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000075500000 - 0x00000000755d2000 	C:\Program Files\Java\jre1.8.0_144\bin\msvcr100.dll
+0x0000000074c60000 - 0x00000000754fd000 	C:\Program Files\Java\jre1.8.0_144\bin\server\jvm.dll
+0x00007ffc2d330000 - 0x00007ffc2d338000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffc26b50000 - 0x00007ffc26b59000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffc27780000 - 0x00007ffc277a3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffc25a20000 - 0x00007ffc25a2a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffc2e820000 - 0x00007ffc2e88c000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc27720000 - 0x00007ffc2774b000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ffc2b8b0000 - 0x00007ffc2b8f9000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x0000000074c50000 - 0x0000000074c5f000 	C:\Program Files\Java\jre1.8.0_144\bin\verify.dll
+0x0000000074c20000 - 0x0000000074c49000 	C:\Program Files\Java\jre1.8.0_144\bin\java.dll
+0x0000000074c00000 - 0x0000000074c16000 	C:\Program Files\Java\jre1.8.0_144\bin\zip.dll
+
+VM Arguments:
+jvm_args: -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms10240m -Xmx10240m -XX:+UseG1GC -XX:MaxGCPauseMillis=4 -Djava.library.path=C:\Users\Nathan\AppData\Roaming\.technic\modpacks\ihopfor-the-pancakes\bin\natives -Dfml.core.libraries.mirror=http://mirror.technicpack.net/Technic/lib/fml/%s -Dminecraft.applet.TargetDirectory=C:\Users\Nathan\AppData\Roaming\.technic\modpacks\ihopfor-the-pancakes -Djava.net.preferIPv4Stack=true 
+java_command: net.minecraft.launchwrapper.Launch --username ziggy1355 --version 1.7.10-Forge10.13.4.1614-1.7.10 --gameDir C:\Users\Nathan\AppData\Roaming\.technic\modpacks\ihopfor-the-pancakes --assetsDir C:\Users\Nathan\AppData\Roaming\.technic\assets --assetIndex 1.7.10 --uuid 2934ef12d4cb4b7bbcb6c456d266f0a4 --accessToken a77bad2489fd4f76b67992260eea5eed --userProperties {} --userType mojang --tweakClass cpw.mods.fml.common.launcher.FMLTweaker --title IHOP(For The Pancakes) --icon C:\Users\Nathan\AppData\Roaming\.technic\assets\packs\ihopfor-the-pancakes\icon.png
+java_class_path (initial): C:\Users\Nathan\AppData\Roaming\.technic\modpacks\ihopfor-the-pancakes\bin\modpack.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\net\minecraft\launchwrapper\1.12\launchwrapper-1.12.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\ow2\asm\asm-all\5.0.3\asm-all-5.0.3.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\com\typesafe\akka\akka-actor_2.11\2.3.3\akka-actor_2.11-2.3.3.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\com\typesafe\config\1.2.1\config-1.2.1.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\scala-lang\scala-actors-migration_2.11\1.1.0\scala-actors-migration_2.11-1.1.0.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\scala-lang\scala-compiler\2.11.1\scala-compiler-2.11.1.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\scala-lang\plugins\scala-continuations-library_2.11\1.0.2\scala-continuations-library_2.11-1.0.2.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\scala-lang\plugins\scala-continuations-plugin_2.11.1\1.0.2\scala-continuations-plugin_2.11.1-1.0.2.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\scala-lang\scala-library\2.11.1\scala-library-2.11.1.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\scala-lang\scala-parser-combinators_2.11\1.0.1\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\scala-lang\scala-reflect\2.11.1\scala-reflect-2.11.1.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\scala-lang\scala-swing_2.11\1.0.1\scala-swing_2.11-1.0.1.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\scala-lang\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\lzma\lzma\0.0.1\lzma-0.0.1.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\net\sf\jopt-simple\jopt-simple\4.5\jopt-simple-4.5.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\com\google\guava\guava\17.0\guava-17.0.jar;C:\Users\Nathan\AppData\Roaming\.technic\cache\org\apache\commons\commons-lang3\3.3.2\commons
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\Google\Chrome\Application;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Nathan\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Users\Nathan\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Java\jre1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_144\bin
+USERNAME=Nathan
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 15063 (10.0.15063.296)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 94 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 25102716k(3068472k free), swap 51072836k(5445236k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.144-b01) for windows-amd64 JRE (1.8.0_144-b01), built on Jul 21 2017 21:57:33 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Oct 04 00:18:56 2017
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

@@ -1,0 +1,1 @@
+recipes.removeShaped(<IC2:blockMetal:3>, [[<BigReactors:BRIngot>, <BigReactors:BRIngot>, <BigReactors:BRIngot>], [<BigReactors:BRIngot>, <BigReactors:BRIngot>, <BigReactors:BRIngot>], [<BigReactors:BRIngot>, <BigReactors:BRIngot>, <BigReactors:BRIngot>]]);

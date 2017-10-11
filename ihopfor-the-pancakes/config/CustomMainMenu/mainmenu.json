@@ -1,0 +1,180 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "modpack:textures/packlogo.png",
+            "posX" : -140,
+            "posY" : -125,
+            "width" : 277.5,
+            "height" : 165,
+            "alignment" : "center"
+        }
+      },
+
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "Play Alone",
+            "posX" : -125,
+            "posY" : 45,
+            "width" : 120,
+            "height" : 24,
+            "imageWidth" : 480,
+            "imageHeight" : 96,
+            "alignment" : "center",
+            "texture" : "modpack:textures/button.png",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+
+        "multiplayer":
+        {
+            "text" : "Play Online",
+            "posX" : 5,
+            "posY" : 45,
+            "width" : 120,
+            "height" : 24,
+            "imageWidth" : 480,
+            "imageHeight" : 96,
+            "alignment" : "center",
+            "texture" : "modpack:textures/button.png",
+            "action" :
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+
+        "Discord":
+        {
+            "text": "Discord Chat",
+            "posX": -125,
+            "posY" : 80,
+            "width" : 120,
+            "height" : 24,
+            "imageWidth" : 480,
+            "imageHeight" : 96,
+            "alignment" : "center",
+            "texture" : "modpack:textures/button.png",
+            "action" :
+            {
+                "type" : "openLink",
+                "link" : "https://discord.gg/0XTT1GvkZC0phnvd"
+            }
+        },
+
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 5,
+            "posY" : 80,
+            "width" : 120,
+            "height" : 24,
+            "imageWidth" : 480,
+            "imageHeight" : 96,
+            "alignment" : "center",
+            "texture" : "modpack:textures/button.png",
+            "action" :
+            {
+                "type" : "quit"
+            }
+        },
+
+        "options":
+        {
+            "text" : "",
+            "posX" : 180,
+            "posY" : 85,
+            "width" : 30,
+            "height" : 30,
+            "imageWidth" : 240,
+            "imageHeight" : 240,
+            "alignment" : "center",
+            "texture" : "modpack:textures/settings.png",
+            "action":
+            {
+            	"type": "openGui",
+            	"gui": "options"
+            }
+        },
+
+        "enderplay":
+        {
+          "text": "",
+          "posX": -210,
+          "posY": -115,
+          "width": 30,
+          "height": 30,
+          "imageWidth": 512,
+          "imageHeight": 512,
+          "alignment" : "center",
+          "texture": "modpack:textures/eplogo.png",
+          "action": {
+            "type": "openLink",
+            "link": "http://enderplay.com"
+          }
+        },
+
+        "akliz":
+        {
+          "text": "",
+          "posX": 175,
+          "posY": -115,
+          "width": 35,
+          "height": 35,
+          "imageWidth": 400,
+          "imageHeight": 400,
+          "alignment" : "center",
+          "texture": "modpack:textures/akliz.png",
+          "action": {
+            "type": "openLink",
+            "link": "http://akliz.endermedia.com"
+          }
+        },
+
+
+      "language":
+      {
+        "text": "",
+        "posX": -210,
+        "posY": 85,
+        "width": 30,
+        "height": 30,
+        "imageWidth": 240,
+        "imageHeight": 240,
+        "alignment" : "center",
+        "texture": "modpack:textures/languages.png",
+        "action": {
+          "type": "openGui",
+          "gui": "languages"
+        }
+      }
+    },
+
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "",
+            "posX" : 0,
+            "posY" : 0,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        }
+    },
+
+    "other":
+    {
+      "panorama":
+      {
+          "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+          "blur" : true,
+          "gradient" : true
+      }
+    }
+}
